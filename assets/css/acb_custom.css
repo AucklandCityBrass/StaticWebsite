@@ -1,0 +1,15 @@
+.acb-info-container {
+	margin-top: 20px;
+	/*outline: 1px solid gray; /* debug */
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: gray;
+}
+
+#fbbuttoncontainer {
+	margin-top: 20px;
+}
+
+#twitterbuttoncontainer {
+	margin-top: 20px;
+}

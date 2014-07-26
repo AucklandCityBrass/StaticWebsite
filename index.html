@@ -1,0 +1,186 @@
+<!--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Auckland City Brass</title>
+	<link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	
+	<!-- Load JQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	
+	<!-- Load Bootstrap framework and ACB theme -->
+	<link href="assets/css/bootstrap-acb.css" rel="stylesheet"/>
+	<script src="assets/js/bootstrap.min.js"></script>
+	
+	<!-- Load bxSlider -->
+	<script src="assets/js/jquery.bxslider.min.js"></script>
+	<link href="assets/css/jquery.bxslider.css" rel="stylesheet" />
+	
+	<!-- Load ACB specific stuff -->
+	<link href="assets/css/acb_custom.css" rel="stylesheet"/>
+	
+	<!-- TEMPORARY STYLE FOR NATIONALS INFO -->
+	<style>
+		.nationals-info{
+			background-color: gray;
+			margin: 5px;
+			padding: 15px;
+			
+			border: 2px solid;
+			border-radius: 10px;
+			border-color: red;
+		}
+		
+		.nationals-info a:link { color:#60ff85; text-decoration: none; }
+		.nationals-info a:visited { color:#ffdddd; text-decoration: none; }
+		.nationals-info a:hover { color:#d4ff00; text-decoration: none; }
+		.nationals-info a:active { color:#7476b4; text-decoration: underline; }
+		
+	</style>
+	
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var isMobile = {
+				Android: function() {
+					return navigator.userAgent.match(/Android/i);
+				},
+				BlackBerry: function() {
+					return navigator.userAgent.match(/BlackBerry/i);
+				},
+				iOS: function() {
+					return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+				},
+				Opera: function() {
+					return navigator.userAgent.match(/Opera Mini/i);
+				},
+				Windows: function() {
+					return navigator.userAgent.match(/IEMobile/i);
+				},
+				any: function() {
+					return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+				}
+			};
+			if (isMobile.any()){
+				var bxOptions = {
+					pager: false,
+					controls: false,
+					captions: false,
+					speed: 1000,
+					auto: false,
+					pause: 10000,
+					autoDelay: 5000
+				};
+			} else {
+				var bxOptions = {
+					pager: false,
+					controls: false,
+					captions: false,
+					speed: 1000,
+					auto: false,
+					pause: 10000,
+					autoDelay: 5000
+				}
+			}
+			$('.bxslider').bxSlider(bxOptions);
+		});
+	</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	
+</head>
+
+<body>
+	<ul class="bxslider ">
+			<li><img src="assets/images/logo.jpg"/></li>
+			<!--<li><img src="assets/images/2012_acbyouth_combined.jpg" title="Youth and Senior Band Cornets, Combined Concert, 2012."/></li>
+			<li><img src="assets/images/2012_acbyouth_cornets.jpg" title="Youth Band Cornets, Combined Concert, 2012."/></li>
+			<li><img src="assets/images/2012_xmas_carolling.jpg" title="ACB Members Carolling at Royal Oak Mall, December 2012"/></li>
+			<li><img src="assets/images/2012_xmas_carolling_2.jpg" title="ACB Members Street Carolling, December 2012"/></li>
+			<li><img src="assets/images/2012_xmas_franklin_rd.jpg" title="Performing at Franklin Rd Lights, 2012"/></li>
+			<li><img src="assets/images/2013_eden_park.jpg" title="Auckland City Brass performing at Eden Park, 2013"/></li>
+			<li><img src="assets/images/2013_anzac_day.jpg" title="Senior Band on ANZAC Day, 2013"/></li>
+			<li><img src="assets/images/2013_nationals_march.jpg" title="Senior Band in Marching Formation at BBANZ Nationals, 2013"/></li>
+			<li><img src="assets/images/2013_nationals_march_2.jpg" title="Senior Band marching at BBANZ Nationals, 2013"/></li>-->
+		</ul>
+	<div class="container">
+		<div class="nationals-info">
+			<h4>THANK YOU TO OUR SUPPORTERS</h4>
+			<hr />
+			<h5>ACB Wins B Grade Own Choice, Second in B Grade Overall</h5>
+			<p>With the 2014 New Zealand National Brass Band Championship now concluded, we would like to extend our heartfelt thanks to everyone who supported ACB in working towards the standard we achieved at this year's competition. Having an audience at our playouts, concerts and online means a lot to us, and played a crucial role in preparing us to walk on stage at Nationals this year.</p>
+			<p>Auckland City Brass moved into B Grade in 2012, after winning C Grade in 2011. Since then, but especially in the past twelve months, we have seen a significant shift in the culture and attitude in the band, and our standard has dramatically improved. For the past two years, ACB placed last in B Grade. We are therefore extremely proud to this year be returning home, having placed first in the B Grade Own Choice section, and second in the test.</p>
+			<p>From here, it's onwards and upwards for ACB. The year is by no means over - we have many more exciting events coming up, including a concert and the ABA Regional contest. We will continue to work on improving our standard and delivering brass music to our community, and look forward to seeing you there!</p>
+			<p></p>
+			
+		</div>
+		<div>
+			<h3>Welcome</h3>
+			<p>Welcome to Auckland City Brass! We are a community brass group that rehearses in Three Kings, Auckland at <a href="http://maps.google.com/?q=1011+Mt+Eden+Rd,+Three+Kings,+Auckland+1042&hl=en&gl=nz">The Old Pumphouse</a>, on Monday evenings. We frequently perform for community events, as well as in "play outs"/concerts that we hold at our band rooms several times a year. <br>
+			</p>
+			<p >
+				We have some exciting new plans heading into 2014 and the future, and to this effect our website is currently undergoing a redesign. In the interim, you can find <a href="#contactus">contact details</a> below, as well as links to our active Facebook and Twitter pages. Enjoy! :)
+			</p>
+			<h3>Bandsmen for Hire</h3>
+			</p>
+			<p >
+				Aside from our community contributions, Auckland City Brass offers a variety of services, including:</p>
+				<ol >
+					<li>Small brass groups (quintets/sextets) for private functions or other purposes.</li>
+					<li>A full brass band for performance at celebrations or other larger functions.</li>
+					<li>Marching in parades or ceremonies.</li>
+					<li> ... And many other things at your request!</li>
+				</ol>
+			<p >
+			If you are looking for a brass band or smaller brass group for any reason, feel free to <a href="#contactus">contact us</a> below for a quote.
+			</p>
+			<h3>Rehearsal Times</h3>
+			<p >
+				Auckland City Brass has several different groups that rehearse on Mondays. Rehearsal times for ACB groups are:</p>
+				<ul >
+					<!--<li>4:00pm Training Band (for more information on this band, call xxx-xxxxxxx)</li>
+					<li>5:00pm Junior Band (for more information on this band, call xxx-xxxxxxx)</li>
+					<li>6:00pm Youth Band (for more information on this band, call xxx-xxxxxxx)</li>
+					<li>7:30pm Senior Band</li> -->
+					<li>5:00pm Junior Band</li>
+					<li>6:00pm Youth Band</li>
+					<li>7:30pm Senior Band</li>
+				</ul>
+				<p > For details on the Youth Programme groups (Junior and Youth Bands), please contact Tane McLeay on 027 848 3851.</p>
+			
+		</div>
+		
+		<div id="socialcontainer">
+			<div id="fbbuttoncontainer" class="col-sm-5 text-center">
+				<a class="btn btn-primary" href="https://www.facebook.com/pages/Auckland-City-Brass/476039209128642" target="_blank">Like us on Facebook!</a>
+			</div>
+			<div id="twitterbuttoncontainer" class="col-sm-6 col-sm-offset-1 text-center">
+				<a class="btn btn-info" href="https://twitter.com/AklCityBrass" target="_blank">Follow us on Twitter!</a>
+			</div>				
+		</div>
+		
+		<div id="leftcontainer" class="col-sm-5 acb-info-container">
+			<a name="contactus"></a>
+			<h3>CONTACT US</h3>
+			<p >We can be reached initially via either email or standard post. For the fastest response, please ensure you provide a correct return email address and/or phone number.<br><br>Our contact details are:<br><br>
+			Email: <a href="mailto:info@aucklandcitybrass.co.nz">info@aucklandcitybrass.co.nz</a>
+			<br><br>
+			Alternatively, you may contact us by sending mail to:<br><br>
+			
+			Auckland City Brass<br>
+			PO Box 27 469<br>
+			Mt Roskill<br>
+			Auckland 1440<br>
+			<br>
+			We look forward to hearing from you!
+			</p>
+		</div>
+		<div id="rightcontainer" class="col-sm-6 col-sm-offset-1 acb-info-container">
+			<h3>JOINING THE SENIOR BAND</h3>
+			<p >Auckland City Brass maintains an "open door" policy for people wishing to come along to play or listen (or both)! To become a member, you should be over 15 years of age, and able to play music of a difficulty roughly equivalent to Grade 5 (or better). We are a friendly and culturally diverse group, and all are welcome.<br><br>
+			To get more information and access to some sample music to play through on your instrument of choice (before you come along), please contact our Musical Director, John Gluyas on 021 752 175.</p>
+		</div>
+	</div>
+</body>
+
+</html>
