@@ -92,6 +92,24 @@
 </head>
 
 <body>
+	<!-- LOAD FACEBOOK API -->
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '375480345949802',
+	      xfbml      : true,
+	      version    : 'v2.2'
+	    });
+	  };
+	
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
 	<ul class="bxslider ">
 			<li><img src="assets/images/logo.png"/></li>
 			<li><img src="assets/images/2012_acbyouth_combined.jpg" title="Youth and Senior Band Cornets, Combined Concert, 2012."/></li>
@@ -153,7 +171,8 @@
 		
 		<div id="socialcontainer">
 			<div id="fbbuttoncontainer" class="col-sm-5 text-center">
-				<a class="btn btn-primary" href="https://www.facebook.com/pages/Auckland-City-Brass/476039209128642" target="_blank">Like us on Facebook!</a>
+				<!--<a class="btn btn-primary" href="https://www.facebook.com/pages/Auckland-City-Brass/476039209128642" target="_blank">Like us on Facebook!</a>-->
+				<div class="fb-share-button" data-href="http://www.aucklandcitybrass.co.nz" data-layout="button_count"></div>
 			</div>
 			<div id="twitterbuttoncontainer" class="col-sm-6 col-sm-offset-1 text-center">
 				<a class="btn btn-info" href="https://twitter.com/AklCityBrass" target="_blank">Follow us on Twitter!</a>
