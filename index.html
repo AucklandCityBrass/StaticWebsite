@@ -1,137 +1,37 @@
-<!--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> -->
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Auckland City Brass</title>
-	<link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-	
-	<!-- Load JQuery -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	
-	<!-- Load Bootstrap framework and ACB theme -->
-	<link href="assets/css/bootstrap-acb.css" rel="stylesheet"/>
-	<script src="assets/js/bootstrap.min.js"></script>
-	
-	<!-- Load bxSlider -->
-	<script src="assets/js/jquery.bxslider.min.js"></script>
-	<link href="assets/css/jquery.bxslider.css" rel="stylesheet" />
-	
-	<!-- Load ACB specific stuff -->
-	<link href="assets/css/acb_custom.css" rel="stylesheet"/>
-	
-	<!-- TEMPORARY STYLE FOR NATIONALS INFO -->
-	<style>
-		.info-box{
-			background-color: gray;
-			margin: 5px;
-			padding: 15px;
-			
-			border: 2px solid;
-			border-radius: 10px;
-			border-color: red;
-		}
-		
-		.info-box a:link { color:#60ff85; text-decoration: none; }
-		.info-box a:visited { color:#ffdddd; text-decoration: none; }
-		.info-box a:hover { color:#d4ff00; text-decoration: none; }
-		.info-box a:active { color:#7476b4; text-decoration: underline; }
-		.info-box .event-info { text-decoration: underline; }
-		
-	</style>
-	
-	
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var isMobile = {
-				Android: function() {
-					return navigator.userAgent.match(/Android/i);
-				},
-				BlackBerry: function() {
-					return navigator.userAgent.match(/BlackBerry/i);
-				},
-				iOS: function() {
-					return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-				},
-				Opera: function() {
-					return navigator.userAgent.match(/Opera Mini/i);
-				},
-				Windows: function() {
-					return navigator.userAgent.match(/IEMobile/i);
-				},
-				any: function() {
-					return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-				}
-			};
-			if (isMobile.any()){
-				var bxOptions = {
-					pager: false,
-					controls: false,
-					captions: false,
-					speed: 1000,
-					auto: false,
-					pause: 10000,
-					autoDelay: 5000
-				};
-			} else {
-				var bxOptions = {
-					pager: false,
-					controls: true,
-					captions: true,
-					speed: 1000,
-					auto: false,
-					pause: 10000,
-					autoDelay: 5000
-				}
-			}
-			$('.bxslider').bxSlider(bxOptions);
-		});
-	</script>
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	
-</head>
-
-<body>
-	<!-- LOAD FACEBOOK API -->
-	<script>
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '375480345949802',
-	      xfbml      : true,
-	      version    : 'v2.2'
-	    });
-	  };
-	
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "//connect.facebook.net/en_US/sdk.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-	</script>
-	<ul class="bxslider ">
-			<li><img src="assets/images/logo.png"/></li>
-			<li><img src="assets/images/2012_acbyouth_combined.jpg" title="Youth and Senior Band Cornets, Combined Concert, 2012."/></li>
-			<li><img src="assets/images/2012_acbyouth_cornets.jpg" title="Youth Band Cornets, Combined Concert, 2012."/></li>
-			<li><img src="assets/images/2012_xmas_carolling.jpg" title="ACB Members Carolling at Royal Oak Mall, December 2012"/></li>
-			<li><img src="assets/images/2012_xmas_carolling_2.jpg" title="ACB Members Street Carolling, December 2012"/></li>
-			<li><img src="assets/images/2012_xmas_franklin_rd.jpg" title="Performing at Franklin Rd Lights, 2012"/></li>
-			<li><img src="assets/images/2013_eden_park.jpg" title="Auckland City Brass performing at Eden Park, 2013"/></li>
-			<li><img src="assets/images/2013_anzac_day.jpg" title="Senior Band on ANZAC Day, 2013"/></li>
-			<li><img src="assets/images/2013_nationals_march.jpg" title="Senior Band in Marching Formation at BBANZ Nationals, 2013"/></li>
-			<li><img src="assets/images/2013_nationals_march_2.jpg" title="Senior Band marching at BBANZ Nationals, 2013"/></li>
-		</ul>
-	<div class="container">
-		<div>
-			<h3>Welcome</h3>
-			<p>Welcome to Auckland City Brass! We are a community brass group that rehearses in Three Kings, Auckland at <a href="http://maps.google.com/?q=1011+Mt+Eden+Rd,+Three+Kings,+Auckland+1042&hl=en&gl=nz">The Old Pumphouse</a>, on Monday evenings. We frequently perform for community events, as well as in "play outs"/concerts that we hold at our band rooms several times a year. <br>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auckland City Brass | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="row">
+        <div class="large-12 columns">
+            <img src="assets/images/logo.jpg"/>
+        </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Welcome to Auckland City Brass</h1>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="large-12 columns">
+	       <p>Welcome to Auckland City Brass! We are a community brass group that rehearses in Three Kings, Auckland at <a href="http://maps.google.com/?q=1011+Mt+Eden+Rd,+Three+Kings,+Auckland+1042&hl=en&gl=nz">The Old Pumphouse</a>, on Monday evenings. We frequently perform for community events, as well as in "play outs"/concerts that we hold at our band rooms several times a year. <br>
 			</p>
 			<p >
 				We have some exciting new plans heading into 2015 and the future, and to this effect our website is currently undergoing a redesign. In the interim, you can find <a href="#contactus">contact details</a> below, as well as links to our active Facebook and Twitter pages. Enjoy! :)
-			</p>
-			<h3>Bandsmen for Hire</h3>
-			</p>
+			</p> 
+        </div>
+    </div>
+      
+    <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+            <h3>Bandsmen for Hire</h3>
 			<p >
 				Aside from our community contributions, Auckland City Brass offers a variety of services, including:</p>
 				<ol >
@@ -143,34 +43,26 @@
 			<p >
 			If you are looking for a brass band or smaller brass group for any reason, feel free to <a href="#contactus">contact us</a> below for a quote.
 			</p>
-			<h3>Rehearsal Times</h3>
+        </div>
+      </div>
+      
+      <div class="row">
+          <div class="large-12 columns">
+            <h3>Rehearsal Times</h3>
 			<p >
 				Auckland City Brass has several different groups that rehearse on Mondays. Rehearsal times for ACB groups are:</p>
 				<ul >
-					<!--<li>4:00pm Training Band (for more information on this band, call xxx-xxxxxxx)</li>
-					<li>5:00pm Junior Band (for more information on this band, call xxx-xxxxxxx)</li>
-					<li>6:00pm Youth Band (for more information on this band, call xxx-xxxxxxx)</li>
-					<li>7:30pm Senior Band</li> -->
 					<li>5:00pm Junior Band</li>
 					<li>6:00pm Youth Band</li>
 					<li>7:30pm Senior Band</li>
 				</ul>
 				<p > For details on the Youth Programme groups (Junior and Youth Bands), please contact Tane McLeay on 027 848 3851.</p>
-			
-		</div>
-		
-		<div id="socialcontainer">
-			<div id="fbbuttoncontainer" class="col-sm-5 text-center">
-				<!--<a class="btn btn-primary" href="https://www.facebook.com/pages/Auckland-City-Brass/476039209128642" target="_blank">Like us on Facebook!</a>-->
-				<div class="fb-share-button" data-href="http://www.aucklandcitybrass.co.nz" data-layout="button_count"></div>
-			</div>
-			<div id="twitterbuttoncontainer" class="col-sm-6 col-sm-offset-1 text-center">
-				<a class="btn btn-info" href="https://twitter.com/AklCityBrass" target="_blank">Follow us on Twitter!</a>
-			</div>				
-		</div>
-		
-		<div id="leftcontainer" class="col-sm-5 acb-info-container">
-			<a name="contactus"></a>
+          </div>
+      </div>
+      
+      <div class="row">
+          <div class="panel large-5 medium-5 small-12 columns">
+              <a name="contactus"></a>
 			<h3>CONTACT US</h3>
 			<p >We can be reached initially via either email or standard post. For the fastest response, please ensure you provide a correct return email address and/or phone number.<br><br>Our contact details are:<br><br>
 			Email: <a href="mailto:info@aucklandcitybrass.co.nz">info@aucklandcitybrass.co.nz</a>
@@ -184,20 +76,19 @@
 			<br>
 			We look forward to hearing from you!
 			</p>
-		</div>
-		<div id="rightcontainer" class="col-sm-6 col-sm-offset-1 acb-info-container">
-			<h3>JOINING THE SENIOR BAND</h3>
+          </div>
+      <div class="panel large-5 medium-5 columns">
+          <h3>JOINING THE SENIOR BAND</h3>
 			<p >Auckland City Brass maintains an "open door" policy for people wishing to come along to play or listen (or both)! To become a member, you should be over 15 years of age, and able to play music of a difficulty roughly equivalent to Grade 5 (or better). We are a friendly and culturally diverse group, and all are welcome.<br><br>
 			To get more information and access to some sample music to play through on your instrument of choice (before you come along), please contact our Chairman, Tane McLeay on 027 848 3851.</p>
-		</div>
-	</div>
-	<div class="info-box">
-			<h3>Coming Soon</h3>
-			<hr />
-			<h4>Our New Website!</h4>
-			<p>Shortly we will be launching our new website for 2015 and onwards. All of the information available on this temporary site will be available on the new one, along with a feed of our upcoming concerts, an area for news updates, and a full fledged photo gallery with up-to-date pictures of the band in rehearsal, concert and contest! Stand by...</p>
-			<hr />
-	</div>
-</body>
-
+      </div>
+      </div>
+        
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
 </html>
